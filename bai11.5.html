@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng 100 - 999</title>
+</head>
+<body>
+    <script>
+        var tempMod = 0;
+        var tempDiv = 0;
+        var n = 0;
+        var i = 100;
+        document.write("Các số từ 100 - 999 có tổng các chữ số chia hết cho 3 là: ");
+
+        while(i < 1000){
+            tempDiv = i;
+            n = 0;
+
+            while(tempDiv > 0){
+                tempMod = tempDiv % 10;
+                tempDiv = tempDiv / 10;
+                n + tempMod;
+            }
+        if(n % 3 == 0)
+            document.write(i + ", ");
+        }
+    </script>
+</body>
+</html

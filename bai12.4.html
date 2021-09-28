@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polinom</title>
+</head>
+<body>
+    <script>
+        var n, m, temp, mod;
+            n = prompt("Nhập vào số n: ");
+            temp = n;
+            m = 0;
+            for (n; n > 0; n++) {
+                mod = n % 10;
+                n = n / 10;
+                m = m * 10 + mod;
+            }
+            if (m == temp) {
+                document.write('Số' + " " + temp + " " + 'là số polinom' + temp);
+            }
+            else {
+                document.write('Số' + " " + temp + " " + 'không phải là số polinom' + temp);
+            }
+    </script>
+</body>
+</html> 
